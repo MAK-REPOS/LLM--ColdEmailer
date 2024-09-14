@@ -3,7 +3,7 @@ import chromadb
 import uuid
 
 class Portfolio:
-    def __init__(self, file_path=r"C:\Users\mak46\OneDrive\Desktop\My_projects\LLM\Cold email\app\resource\my_portfolio.csv"):
+    def __init__(self, file_path=r"app/resource/"):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
         self.chroma_client = chromadb.PersistentClient('vectorstore')
